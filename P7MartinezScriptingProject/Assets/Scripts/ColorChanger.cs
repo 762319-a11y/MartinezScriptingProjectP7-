@@ -13,6 +13,18 @@ public class ColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GetComponent<Renderer>().material.color = Color.red;
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            GetComponet<Renderer>().material.color = Color.green;
+        }
+        if (Input.GeetKeyDown(keyCode.B))
+        {
+            GetComponet<Renderer>().material.color = Color.blue;
+        }
     }
 }
